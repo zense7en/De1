@@ -6313,8 +6313,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
   height: 100%;
   width: 100%; }
 
@@ -6336,60 +6334,44 @@ header .navbar-brand img {
 footer img {
   max-width: 200px; }
 
-.home-slider .owl-carousel .item {
-  position: relative; }
-  .home-slider .owl-carousel .item .title {
-    padding-top: 2rem;
-    padding-right: 0;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center; }
-  @media (min-width: 768px) {
-    .home-slider .owl-carousel .item .title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: #ffffff;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
-      .home-slider .owl-carousel .item .title h2 {
-        font-size: 3rem; }
-      .home-slider .owl-carousel .item .title p {
-        font-size: 1.5rem;
-        line-height: 2rem; } }
-
-.home-slider .owl-carousel .owl-dots {
-  margin-bottom: 2rem; }
-
-.home-news .item figure .blockimg {
-  border-radius: 10px;
-  overflow: hidden; }
-  .home-news .item figure .blockimg img {
-    width: 100%; }
-
-.home-news .item figure figcaption {
-  margin-top: 1rem; }
-  .home-news .item figure figcaption h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0; }
-  .home-news .item figure figcaption time {
-    font-size: 0.85rem;
-    color: #b3b3b3; }
-  .home-news .item figure figcaption p {
-    margin-top: .5rem;
-    color: gray; }
-
-.home-clients .owl-carousel .item {
-  padding: 0.5rem; }
-
-.home-clients .owl-carousel .owl-nav {
-  margin-bottom: 2rem; }
-  .home-clients .owl-carousel .owl-nav button i {
+.home_header .container h1 {
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  font-size: 30;
+  letter-spacing: 0.04rem; }
+  .home_header .container h1:before {
+    content: "";
     display: block;
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem; }
+    position: absolute;
+    left: 52.8%;
+    background: #00c4c9;
+    width: 4.5rem;
+    top: 6.6875rem;
+    height: 0.1875rem;
+    margin: -3.5rem;
+    transform: translateX(-5%) translateY(50%); }
+  .home_header .container h1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    margin-left: 0.6rem;
+    top: 2.7rem;
+    border-radius: 50%;
+    border: 3px #00c4c9 solid;
+    transform: translateX(-10%) translateY(20%); }
+
+.home_header ul {
+  justify-content: center; }
+  .home_header ul li a {
+    color: black;
+    font-family: Helvetica Bold;
+    font-size: 14; }
 
 /*# sourceMappingURL=main.css.map */

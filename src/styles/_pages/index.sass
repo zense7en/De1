@@ -1,67 +1,45 @@
 /////////////////////////////////
 // Phần Slider
 /////////////////////////////////
-.home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
+.home_header
+	.container
+		h1
+			justify-content: center
+			align-items: center
+			font-family: Roboto
+			text-align: center
 			position: relative
-			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
-				display: flex
-				align-items: center
-			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
-					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
+			display: flex
+			font-size: 30
+			letter-spacing: 0.04rem
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				left: 52.8%
+				background: #00c4c9
+				width: 4.5rem
+				top: 6.6875rem
+				height: 0.1875rem
+				margin: -3.5rem
+				transform: translateX(-5%) translateY(50%)
 
-.home-news
-	.item 
-		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
-	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
-		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				width: 1rem
+				height: 1rem
+				background: #fff
+				margin-left: 0.6rem
+				top: 2.7rem
+				border-radius: 50% 
+				border: 3px #00c4c9 solid
+				transform: translateX(-10%) translateY(20%)
+	ul
+		justify-content: center
+		li
+			a
+				color: black
+				font-family: Helvetica Bold
+				font-size: 14
