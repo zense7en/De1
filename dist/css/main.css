@@ -6342,7 +6342,8 @@ footer img {
   position: relative;
   display: flex;
   font-size: 30;
-  letter-spacing: 0.04rem; }
+  letter-spacing: 0.04rem;
+  bottom: 1.5rem; }
   .home_header .container h1:before {
     content: "";
     display: block;
@@ -6367,11 +6368,13 @@ footer img {
     border: 3px #00c4c9 solid;
     transform: translateX(-10%) translateY(20%); }
 
-.home_header ul {
-  justify-content: center; }
-  .home_header ul li a {
-    color: black;
-    font-family: Helvetica Bold;
-    font-size: 14; }
+.home_header ul li a {
+  color: black;
+  font-family: Helvetica Bold;
+  font-size: 14; }
+  .home_header ul li a:hover, .home_header ul li a:active {
+    color: #ffffff;
+    -webkit-border-radius: 50px 50px;
+    background-color: #00c4c9; }
 
 /*# sourceMappingURL=main.css.map */
